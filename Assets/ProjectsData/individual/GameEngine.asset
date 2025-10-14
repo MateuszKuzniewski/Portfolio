@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40fb771dcd6b6664bbc9f0b9b0844f66, type: 3}
+  m_Name: GameEngine
+  m_EditorClassIdentifier: 
+  Thumbnail: {fileID: 21300000, guid: bc4e4fdb3570e4949b421afaccd8b0b0, type: 3}
+  Title: GAME ENGINE
+  PreviewDescription: unity inspired c++ game engine
+  Description: "This project was my attempt at learning how game engines work.\n\nI
+    am using OpenGL for the rendering, ReactPhysics3D for the physics system and
+    ImGui for the interface layer. \n\nThe engine supports parsing .obj files, creating
+    game objects, adding and retrieving components (albeit not from the interface
+    level yet) and modifying properties of transforms and colliders at runtime. The
+    lighting is implemented with a Phong shading model. There is a simple, CPU side
+    particle system as well.\n\nThis was a fun little project and helped me with
+    understanding different layers of the architecture that make game engines although
+    I still have a long way to go !"
+  Technologies: OpenGL, ReactPhysics3D, ImGui
+  Languages: C++
+  RepositoryUrl: https://github.com/MateuszKuzniewski/GameEngine
+  VideoURL: https://mateuszkuzniewski.github.io/PortfolioVideo/gameengine-video.mp4
+  TeamSize: 1
+  DevelopmentTime: 1 year
+  Images:
+  - {fileID: 21300000, guid: 844a0f5e58030664f8c556526590c526, type: 3}
+  - {fileID: 21300000, guid: 0d1a64f182b78594383aba2b6e2a33d3, type: 3}
+  - {fileID: 21300000, guid: 8d033a37b90c4974499444fb3663f9db, type: 3}
+  - {fileID: 21300000, guid: 6008fb63d2c19d0469c85b1a7003ee52, type: 3}

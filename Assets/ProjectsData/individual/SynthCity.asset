@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40fb771dcd6b6664bbc9f0b9b0844f66, type: 3}
+  m_Name: SynthCity
+  m_EditorClassIdentifier: 
+  Thumbnail: {fileID: 21300000, guid: a943a8829929d2a40a410f97ad6570c2, type: 3}
+  Title: SYNTHCITY
+  PreviewDescription: story driven RPG demo
+  Description: "Synthcity is an isometric story driven game with RPG elements made
+    in Unity 3D and targeted for PC platform. This project is my dissertation piece
+    for BSc Computer Games Programming course at Kingston Univeristy.\n\nSynthcity
+    is a game born of passion for RPGs. This is a type of game I love to play and
+    thus I have always wanted to create one with my original theme. Creating a fully
+    fleshed out RPG game would be impossible within given time frame, therefore,
+    Synthcity is going to be a storyline game with RPG elements. These elements exist
+    in the form of systems such as looting, inventory, quests, combat, and dialogue
+    with characters.\n\nAction of \u201CSynthcity\u201D takes place in a dystopian
+    society where body modifications and alteration of human genome became extremely
+    advanced and popular. Modification of human genome has become wildly accessible,
+    and \u201CInjections\u201D are its most common method. The player will unravel
+    a mystery of new type of synthetic DNA that may cause chaos in the current world."
+  Technologies: Unity3D, Reaper
+  Languages: C#
+  RepositoryUrl: https://github.com/MateuszKuzniewski/SynthCity
+  VideoURL: https://mateuszkuzniewski.github.io/PortfolioVideo/synthcity-video.mp4
+  TeamSize: 1
+  DevelopmentTime: 8 months
+  Images:
+  - {fileID: 21300000, guid: 914063035c7982f428dc4ecc4de0fae7, type: 3}
+  - {fileID: 21300000, guid: c513501e8778ba748ab843b669987c93, type: 3}
+  - {fileID: 21300000, guid: 89e8358a43826a04d9a44367b82b58a7, type: 3}
+  - {fileID: 21300000, guid: 43788d3038674244c8fdec3eb4484d16, type: 3}

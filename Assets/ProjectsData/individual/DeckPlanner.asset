@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40fb771dcd6b6664bbc9f0b9b0844f66, type: 3}
+  m_Name: DeckPlanner
+  m_EditorClassIdentifier: 
+  Thumbnail: {fileID: 21300000, guid: 9577768eff9cd9d43bd2ce686461cd69, type: 3}
+  Title: DECK PLANNER
+  PreviewDescription: interactive design software built with Unity3D
+  Description: "- Implemented a runtime conversion system to switch between imperial
+    and metric units based on the localised application version.\n\n- Expanded entity
+    functionality by enabling dynamic creation and deletion at runtime, and connecting
+    them to corresponding UI elements.\n \n- Built and deployed customized versions
+    of the application tailored for specific regions such as Europe and Australia.\n\n-
+    Integrated new products into the application based on the requirements from the
+    client.\n\n- Worked on major code refactoring efforts, updating legacy code to
+    meet modern development standards. \n\n- Modularized the codebase by breaking
+    down tightly coupled logic into smaller, more manageable model-view-controller
+    submodules, making the code easier to maintain and extend."
+  Technologies: Unity3D
+  Languages: C#
+  RepositoryUrl: https://deckplanner.strongtie.com/ols/surface/contentbuilder/deckplanner
+  VideoURL: https://mateuszkuzniewski.github.io/PortfolioVideo/deckplanner-video.mp4
+  TeamSize: 12
+  DevelopmentTime: ongoing
+  Images:
+  - {fileID: 21300000, guid: f465d2e6a2e8f6041b2c91b9da11b9da, type: 3}
+  - {fileID: 21300000, guid: 9f6e730c76187814b8ace2102c8ee3ef, type: 3}
+  - {fileID: 21300000, guid: 6d9d9a8f6d9ff794db1e86c68ba3487f, type: 3}
+  - {fileID: 21300000, guid: 8157cbc6ff3d25547885bffd71e47985, type: 3}

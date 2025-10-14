@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40fb771dcd6b6664bbc9f0b9b0844f66, type: 3}
+  m_Name: IceHenge
+  m_EditorClassIdentifier: 
+  Thumbnail: {fileID: 21300000, guid: 781fc2874f389df4782a01248d87fa33, type: 3}
+  Title: ICE-HENGE
+  PreviewDescription: unity shader demo
+  Description: 'Ice-henge is a project developed in Unity3D to showcase custom shaders
+    that were created with Unity''s Shader Graphs.
+
+
+    The project was made as
+    a gallery of different shading techniques which include: light refraction, parallax
+    effect, environmental fog and texture transformations.
+
+
+    The scene represents
+    a monument, constructed out of ice, that is located in the middle of a frozen
+    lake. Above the icy formations, there is a whirling cloud of frost which is the
+    source of the freezing weather. A snow particle effect and snowy terrain have
+    been added to enhance the scene.
+
+'
+  Technologies: Unity3D, ShaderLab
+  Languages: HLSL
+  RepositoryUrl: 
+  VideoURL: https://mateuszkuzniewski.github.io/PortfolioVideo/icehenge-video.mp4
+  TeamSize: 1
+  DevelopmentTime: 2 weeks
+  Images:
+  - {fileID: 21300000, guid: 2261e3708b7eade46b57e1c5764f8650, type: 3}
+  - {fileID: 21300000, guid: abdc84525fc1afa42a0630e81c13e7e8, type: 3}
+  - {fileID: 21300000, guid: 49631902a2b27674597fa288edd93dec, type: 3}
+  - {fileID: 21300000, guid: 71a8188607e41a9408200f96fc42af52, type: 3}
