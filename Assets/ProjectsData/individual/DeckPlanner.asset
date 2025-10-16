@@ -15,16 +15,16 @@ MonoBehaviour:
   Thumbnail: {fileID: 21300000, guid: 9577768eff9cd9d43bd2ce686461cd69, type: 3}
   Title: DECK PLANNER
   PreviewDescription: interactive design software built with Unity3D
-  Description: "- Implemented a runtime conversion system to switch between imperial
-    and metric units based on the localised application version.\n\n- Expanded entity
-    functionality by enabling dynamic creation and deletion at runtime, and connecting
-    them to corresponding UI elements.\n \n- Built and deployed customized versions
-    of the application tailored for specific regions such as Europe and Australia.\n\n-
-    Integrated new products into the application based on the requirements from the
-    client.\n\n- Worked on major code refactoring efforts, updating legacy code to
-    meet modern development standards. \n\n- Modularized the codebase by breaking
-    down tightly coupled logic into smaller, more manageable model-view-controller
-    submodules, making the code easier to maintain and extend."
+  Description: "Deck Planner is a 3D design tool for planning outdoor spaces. It
+    lets users design custom decks, choose materials, add features, and generate
+    a detailed report for contractors. I worked as part of a small four-person team
+    responsible for maintaining and improving the application\u2019s front end. My
+    key contributions included:\n\n- Refactored large sections of legacy code to
+    improve readability, maintainability, and alignment with modern standards.\n\n-
+    Broke down monolithic classes into smaller, modular components while preserving
+    existing functionality.\n\n- Rewrote parts of the codebase to better follow the
+    MVC architecture.\n\n- Integrated new products and features based on client requirements.\n\n-
+    Improved performance by implementing a new data loading and\ncaching system."
   Technologies: Unity3D
   Languages: C#
   RepositoryUrl: https://deckplanner.strongtie.com/ols/surface/contentbuilder/deckplanner

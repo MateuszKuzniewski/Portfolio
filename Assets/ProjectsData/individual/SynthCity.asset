@@ -15,19 +15,20 @@ MonoBehaviour:
   Thumbnail: {fileID: 21300000, guid: a943a8829929d2a40a410f97ad6570c2, type: 3}
   Title: SYNTHCITY
   PreviewDescription: story driven RPG demo
-  Description: "Synthcity is an isometric story driven game with RPG elements made
-    in Unity 3D and targeted for PC platform. This project is my dissertation piece
-    for BSc Computer Games Programming course at Kingston Univeristy.\n\nSynthcity
-    is a game born of passion for RPGs. This is a type of game I love to play and
-    thus I have always wanted to create one with my original theme. Creating a fully
-    fleshed out RPG game would be impossible within given time frame, therefore,
-    Synthcity is going to be a storyline game with RPG elements. These elements exist
-    in the form of systems such as looting, inventory, quests, combat, and dialogue
-    with characters.\n\nAction of \u201CSynthcity\u201D takes place in a dystopian
-    society where body modifications and alteration of human genome became extremely
-    advanced and popular. Modification of human genome has become wildly accessible,
-    and \u201CInjections\u201D are its most common method. The player will unravel
-    a mystery of new type of synthetic DNA that may cause chaos in the current world."
+  Description: "Synthcity is an isometric, story-driven action RPG developed in Unity
+    for PC. It served as my dissertation project for the BSc Computer Games Programming
+    course at Kingston University.\r\nThe goal was to create a playable demo showcasing
+    the game\u2019s core mechanics and systems. Synthcity draws inspiration from
+    titles like Cyberpunk 2077, Divinity: Original Sin 2, and Fallout. \n\nThe demo
+    features a narrative intro and a full playable level where the player can: Complete
+    quests with a World of Warcraft\u2013style quest tracker; Engage in dialogue
+    with NPCs through a click-through dialog system; Buy, sell, and loot items, with
+    equipment that modifies player stats; Use melee or ranged weapons, each with
+    unique abilities; Unlock and use character abilities that enhance gameplay.\r\n\r\nThe
+    game\u2019s world is set in a dystopian future where genetic modification and
+    body augmentation have become mainstream. Through the story, the player unravels
+    a mystery involving a new form of synthetic DNA that threatens to destabilize
+    society.\r\n"
   Technologies: Unity3D, Reaper
   Languages: C#
   RepositoryUrl: https://github.com/MateuszKuzniewski/SynthCity

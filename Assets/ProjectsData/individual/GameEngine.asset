@@ -29,7 +29,7 @@ MonoBehaviour:
   RepositoryUrl: https://github.com/MateuszKuzniewski/GameEngine
   VideoURL: https://mateuszkuzniewski.github.io/PortfolioVideo/gameengine-video.mp4
   TeamSize: 1
-  DevelopmentTime: 1 year
+  DevelopmentTime: 6 months
   Images:
   - {fileID: 21300000, guid: 844a0f5e58030664f8c556526590c526, type: 3}
   - {fileID: 21300000, guid: 0d1a64f182b78594383aba2b6e2a33d3, type: 3}
