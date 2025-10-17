@@ -4957,7 +4957,7 @@ MonoBehaviour:
   baseSpeed: 1
   speedIncrease: 0.7
   gameStartTime: 3
-  blockDeleteTime: 2
+  blockDeleteTime: 1
 --- !u!4 &467446973
 Transform:
   m_ObjectHideFlags: 0
