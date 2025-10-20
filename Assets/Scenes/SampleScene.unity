@@ -3601,7 +3601,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Github
+  m_text: github
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 95cb914bc3f4ec94f8f9ceb7b54900e2, type: 2}
   m_sharedMaterial: {fileID: -6128711685927328832, guid: 95cb914bc3f4ec94f8f9ceb7b54900e2, type: 2}
