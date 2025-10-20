@@ -13,6 +13,9 @@ public class UIButtonToggle : MonoBehaviour
 	[SerializeField]
 	private GameObject pageMain, pageSecondary, leftArrow, rightArrow;
 
+	[SerializeField]
+	private UIScrollbarControl scrollbarControl;
+
 	private bool isOpen = false;
 
 	private Button button;
@@ -20,8 +23,8 @@ public class UIButtonToggle : MonoBehaviour
 	void Awake()
 	{
 		button = GetComponent<Button>();
+		scrollbarControl.OnValueChanged.AddListener(_ => UpdateImageControls());
 	}
-
 
 	public void TogglePage()
 	{
@@ -31,6 +34,17 @@ public class UIButtonToggle : MonoBehaviour
 		leftArrow.SetActive(isOpen);
 		rightArrow.SetActive(isOpen);
 		UpdateColourState();
+		UpdateImageControls();
+	}
+
+	private void UpdateImageControls()
+	{
+		if (pageSecondary.activeSelf)
+		{
+			var epsilon = 0.001f;
+			leftArrow.SetActive(scrollbarControl.Value > epsilon);
+			rightArrow.SetActive(scrollbarControl.Value < 1f - epsilon);
+		}
 	}
 
 	private void UpdateColourState()

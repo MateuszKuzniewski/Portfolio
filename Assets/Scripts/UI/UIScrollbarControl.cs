@@ -1,9 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEngine.UI.Scrollbar;
 
 
 public class UIScrollbarControl : MonoBehaviour
 {
+	public float Value => scrollbar.value;
+
+	public ScrollEvent OnValueChanged => scrollbar.onValueChanged;
+
+
 	[SerializeField]
 	private Scrollbar scrollbar;
 
