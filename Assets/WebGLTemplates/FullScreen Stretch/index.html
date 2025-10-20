@@ -91,5 +91,73 @@
         alert(message);
       });
     </script>
+
+        <script>
+        (function() {
+        function isEdgeBrowser() {
+        return /Edg\//.test(navigator.userAgent);
+        }
+
+        if (isEdgeBrowser() && !localStorage.getItem('edgeWarningDismissed')) {
+        const popup = document.createElement('div');
+        popup.innerHTML = `
+        <div id="edge-warning-popup" style="
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                background: rgba(30, 30, 30, 0.95);
+                color: #fff;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 12px;
+                padding: 1em 1.5em;
+                max-width: 300px;
+                font-family: sans-serif;
+                font-size: 14px;
+                line-height: 1.4em;
+                z-index: 9999;
+                box-shadow: 0 0 15px rgba(0,0,0,0.4);
+                backdrop-filter: blur(6px);
+                animation: edgePopupFadeIn 0.4s ease-out;
+
+                <div style="
+                background: #fff;
+                padding: 2em;
+                border-radius: 1rem;
+                max-width: 400px;
+                text-align: center;
+                font-family: sans-serif;
+                box-shadow: 0 0 20px rgba(0,0,0,0.3);">
+
+                <div style="font-weight: bold; font-size: 15px; margin-bottom: 0.5em;">
+                <p>If you are experiencing low performance or high CPU usage, 
+                go to: <b>edge://flags</b>
+                and enable
+                <b>WebGL Draft Extensions</b></p>
+                <p>For the best experience, try Chrome or Firefox.</p>
+
+                <button id="edge-popup-close" style="
+                margin-top: 0.8em;
+                padding: 0.4em 1em;
+                border: none;
+                border-radius: 6px;
+                background: #0078D7;
+                color: #fff;
+                font-weight: bold;
+                cursor: pointer;
+                font-size: 13px;
+                float: right;
+                ">OK</button>
+                </div>
+        </div>`;
+
+        document.body.appendChild(popup);
+
+        document.getElementById('edge-popup-close').addEventListener('click', function() {
+        popup.remove();
+        localStorage.setItem('edgeWarningDismissed', 'true');
+        });
+        }
+        })();
+        </script>
   </body>
 </html>
