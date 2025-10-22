@@ -22038,7 +22038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 507e9d5323634874b820d9253866606d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: https://mateuszkuzniewski.github.io/PortfolioVideo/MK%20resume.pdf
+  url: https://mateuszkuzniewski.github.io/PortfolioVideo/MKresume.pdf
 --- !u!114 &1813584946
 MonoBehaviour:
   m_ObjectHideFlags: 0
