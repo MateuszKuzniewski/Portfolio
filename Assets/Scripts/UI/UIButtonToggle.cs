@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -16,6 +17,9 @@ public class UIButtonToggle : MonoBehaviour
 	[SerializeField]
 	private UIScrollbarControl scrollbarControl;
 
+	[SerializeField]
+	private TextMeshProUGUI slideCounter;
+
 	private bool isOpen = false;
 
 	private Button button;
@@ -33,6 +37,7 @@ public class UIButtonToggle : MonoBehaviour
 		pageSecondary.SetActive(isOpen);
 		leftArrow.SetActive(isOpen);
 		rightArrow.SetActive(isOpen);
+		slideCounter.gameObject.SetActive(isOpen);
 		UpdateColourState();
 		UpdateImageControls();
 	}
@@ -44,7 +49,18 @@ public class UIButtonToggle : MonoBehaviour
 			var epsilon = 0.001f;
 			leftArrow.SetActive(scrollbarControl.Value > epsilon);
 			rightArrow.SetActive(scrollbarControl.Value < 1f - epsilon);
+			UpdateSlideCounter();
 		}
+	}
+
+	private void UpdateSlideCounter()
+	{
+		if (scrollbarControl.Value == 0)
+		{
+			slideCounter.text = "1 / 4";
+			return;
+		}
+		slideCounter.text = Mathf.CeilToInt(scrollbarControl.Value * 4) + " / 4";
 	}
 
 	private void UpdateColourState()
