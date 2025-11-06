@@ -20,10 +20,10 @@ MonoBehaviour:
     ImGui for the interface layer. \n\nThe engine supports parsing .obj files, creating
     game objects, adding and retrieving components (albeit not from the interface
     level yet) and modifying properties of transforms and colliders at runtime. The
-    lighting is implemented with a Phong shading model. There is a simple, CPU side
-    particle system as well.\n\nThis was a fun little project and helped me with
-    understanding different layers of the architecture that make game engines although
-    I still have a long way to go !"
+    lighting is implemented with a Phong shading model. There is a simple, CPU particle
+    system as well.\n\nThis was a fun little project and helped me with understanding
+    different layers of the architecture that make game engines although I still
+    have a long way to go !"
   Technologies: OpenGL, ReactPhysics3D, ImGui
   Languages: C++
   RepositoryUrl: https://github.com/MateuszKuzniewski/GameEngine
