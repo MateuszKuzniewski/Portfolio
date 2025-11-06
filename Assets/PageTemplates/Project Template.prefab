@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 8548361695476502967}
   - component: {fileID: 2814351434035274095}
   - component: {fileID: 2566399935779316105}
+  - component: {fileID: 9162265638862667859}
   m_Layer: 5
   m_Name: Button - Overlay
   m_TagString: Untagged
@@ -196,6 +197,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &9162265638862667859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801663731177660769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69037db8486f8f448adfac5495cbc50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeselectAfterClick
 --- !u!1 &3684235406782440769
 GameObject:
   m_ObjectHideFlags: 0
@@ -864,6 +877,7 @@ GameObject:
   - component: {fileID: 4342814677685750212}
   - component: {fileID: 3302238209378555012}
   - component: {fileID: 6003922849528633922}
+  - component: {fileID: 1636095303992050864}
   m_Layer: 5
   m_Name: Button - Text
   m_TagString: Untagged
@@ -951,7 +965,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 0.995283, b: 0.995283, a: 0}
-    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.54901963}
+    m_HighlightedColor: {r: 1, g: 1, b: 1, a: 0.39215687}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -986,3 +1000,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   browserElementView: {fileID: 5605632293744074775}
+--- !u!114 &1636095303992050864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7660095770075039594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69037db8486f8f448adfac5495cbc50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeselectAfterClick
