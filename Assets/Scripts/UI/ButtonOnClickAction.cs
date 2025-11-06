@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-
+[RequireComponent(typeof(Button))]
 public class ButtonOnClickAction : MonoBehaviour
 {
 	private Button button;
