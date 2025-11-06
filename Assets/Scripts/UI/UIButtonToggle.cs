@@ -76,7 +76,7 @@ public class UIButtonToggle : MonoBehaviour
 
 		var selectedObject = EventSystem.current.currentSelectedGameObject;
 
-		if (selectedObject.GetComponent<UIButtonToggle>())
+		if (selectedObject?.GetComponent<UIButtonToggle>())
 		{
 			EventSystem.current.SetSelectedGameObject(null);
 		}
