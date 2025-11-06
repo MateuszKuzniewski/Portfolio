@@ -526,6 +526,7 @@ GameObject:
   - component: {fileID: 10540931}
   - component: {fileID: 10540930}
   - component: {fileID: 10540929}
+  - component: {fileID: 10540934}
   m_Layer: 6
   m_Name: Website Button
   m_TagString: Untagged
@@ -660,6 +661,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 10540927}
   m_CullTransparentMesh: 1
+--- !u!114 &10540934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10540927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69037db8486f8f448adfac5495cbc50e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DeselectAfterClick
 --- !u!1 &21246562
 GameObject:
   m_ObjectHideFlags: 0
@@ -18204,7 +18217,7 @@ RectTransform:
   m_GameObject: {fileID: 1516631438}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 485801868}
@@ -18215,7 +18228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.3, y: -503.3}
+  m_AnchoredPosition: {x: -0.3, y: -508}
   m_SizeDelta: {x: 134.87, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1516631440
@@ -18236,7 +18249,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: -55.3
+  m_Spacing: -70
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0
