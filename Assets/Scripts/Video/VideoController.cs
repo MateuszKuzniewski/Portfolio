@@ -20,9 +20,6 @@ public class VideoController : MonoBehaviour
 	[SerializeField]
 	private GameObject videoOverlay;
 
-	[SerializeField]
-	private Button button;
-
 
 	void Start()
 	{
