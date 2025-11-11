@@ -15,13 +15,13 @@ public class TetrominoPool : MonoBehaviour
 
 	private GameObject currentItem, nextItem;
 
-	public void Initialise(Vector2 gridSize, float verticalOffset, float horizontalOffset)
+	public void Initialise(Vector2 gridSize, float offset)
 	{
 		foreach (var obj in blocks)
 		{
 			var block = Instantiate(obj, parent);
 			block.transform.localScale = Vector3.one;
-			block.GetComponent<Tetromino>().Initialise(parent, gridSize, verticalOffset, horizontalOffset);
+			block.GetComponent<Tetromino>().Initialise(parent, gridSize, offset);
 			block.SetActive(false);
 			Enqueue(block);
 		}

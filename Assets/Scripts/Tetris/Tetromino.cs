@@ -39,12 +39,12 @@ public class Tetromino : MonoBehaviour, IMoveable, ICollidable
 		image = GetComponentInChildren<RawImage>();
 	}
 
-	public void Initialise(Transform parentGrid, Vector2 gridBounds, float verticalOffset, float horizontalOffset)
+	public void Initialise(Transform parentGrid, Vector2 gridBounds, float offset)
 	{
 		this.parentGrid = parentGrid;
 		this.gridBounds = gridBounds;
-		this.verticalOffset = new Vector3(0, verticalOffset, 0);
-		this.horizontalOffset = new Vector3(horizontalOffset, 0, 0);
+		this.verticalOffset = new Vector3(0, offset, 0);
+		this.horizontalOffset = new Vector3(offset, 0, 0);
 
 	}
 

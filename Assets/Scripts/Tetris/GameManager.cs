@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
 	void Start()
 	{
 		grid.Render(gridSize);
-		pool.Initialise(gridSize, MOVE_OFFSET, MOVE_OFFSET);
+		pool.Initialise(gridSize, MOVE_OFFSET);
 		inputManager.RegisterActionHold(KeyCode.LeftArrow,  HOLD_THRESHOLD, REPEAT_INTERVAL, MoveLeft, MoveLeft);
 		inputManager.RegisterActionHold(KeyCode.RightArrow, HOLD_THRESHOLD, REPEAT_INTERVAL, MoveRight, MoveRight);
 		inputManager.RegisterActionHold(KeyCode.DownArrow,  HOLD_THRESHOLD, REPEAT_INTERVAL, MoveDown, MoveDown);
@@ -285,13 +285,15 @@ public class GameManager : MonoBehaviour
 
 	private void InitialiseSpeedValues()
 	{
+		var minValue = 0.01f;
 		speedValues[0] = baseSpeed;
+
 		for (int i = 1; i <= MAX_LEVEL; i++)
 		{
 			var speedVal = speedValues[i - 1] * speedIncrease;
 
-			if (speedVal <= 0.01f)
-				speedValues[i] = 0.01f;
+			if (speedVal <= minValue)
+				speedValues[i] = minValue;
 			else
 				speedValues[i] = speedVal;
 		}
