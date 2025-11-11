@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 
 public class GameManager : MonoBehaviour
@@ -64,7 +65,9 @@ public class GameManager : MonoBehaviour
 		inputManager.RegisterActionHold(KeyCode.RightArrow, HOLD_THRESHOLD, REPEAT_INTERVAL, MoveRight, MoveRight);
 		inputManager.RegisterActionHold(KeyCode.DownArrow,  HOLD_THRESHOLD, REPEAT_INTERVAL, MoveDown, MoveDown);
 		inputManager.RegisterActionTap(KeyCode.UpArrow, Rotate);
-		inputManager.RegisterActionTap(KeyCode.Space, Hold);
+		inputManager.RegisterActionTap(KeyCode.LeftShift, Hold);
+		inputManager.RegisterActionTap(KeyCode.Space, PlaceDown);
+
 
 		gameStartTimer.OnFinished += StartGame;
 		blockDeleteTimer.OnFinished += AddToGrid;
@@ -141,6 +144,26 @@ public class GameManager : MonoBehaviour
 				currentTetromino.Blink(true);
 				blockDeleteTimer.StartCounter(blockDeleteTime);
 			}
+		}
+	}
+
+	public void PlaceDown()
+	{
+		while (CanMoveVertical(currentTetromino, -MOVE_OFFSET))
+		{
+			time = 0.0f;
+			currentTetromino.MoveVertical(Vector3.down);
+			currentTetromino.Blink(false);
+
+			if (!blockDeleteTimer.IsFinished)
+				blockDeleteTimer.StopCounter();
+		}
+
+
+		if (blockDeleteTimer.IsFinished)
+		{
+			currentTetromino.Blink(true);
+			blockDeleteTimer.StartCounter(blockDeleteTime);
 		}
 	}
 
