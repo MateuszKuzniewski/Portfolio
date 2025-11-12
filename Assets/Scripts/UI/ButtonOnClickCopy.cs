@@ -25,7 +25,9 @@ public class ButtonOnClickCopy : MonoBehaviour
 
 	private void AddToClipboard()
 	{
-		GUIUtility.systemCopyBuffer = textToCopy;
+		// GUIUtility.systemCopyBuffer = textToCopy;
+
+		WebGLCopyAndPaste.WebGLCopyAndPasteAPI.CopyToClipboard(textToCopy);
 
 		if (!string.IsNullOrEmpty(feedbackText))
 		{
